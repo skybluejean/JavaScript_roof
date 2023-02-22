@@ -12,12 +12,26 @@
 <body>
   <div id="root"></div>
 
-<script>
+  <script>
+    
+    let pokemon = ["피카츄", "라이츄", "파이리", "꼬부기", "이상해씨","갸랴도스"];
+    let root = document.getElementById("root");
 
+    for(let i = 0; pokemon[i] < 7; i++){}
 
+    for(
+      let index = 0; //숫자 0을 index라는 변수에 담음 
+      index < 10;  //비교연산을 한다. => 10보다 작으면 실행하라는 뜻. 컴퓨터에게 반복횟수를 조절할 수 있다.
+      index = index + 1 //
+      ){}
+
+    /*
+    let root = window["document"].getElementById("root");
+    let a = window;
+    console.dir(a);
+    */
 
 /*
-let pokemon = ["피카츄", "라이츄", "파이리", "꼬부기", "이상해씨","갸랴도스"];
 console.dir(pokemon);
 console.log(pokemon[4]);
 console.log(pokemon.length);
