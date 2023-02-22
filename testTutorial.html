@@ -12,10 +12,51 @@
 
 
 <body>
-  
+<div id="name"></div>
+
 <script>
+let nameList = ["강지민", "곽윤호", "권예준", "김동주", "김은아", "김종윤", "김지섭", "김형진", "노수민", "류은이", "박수연", "박준형", "성해경", "이경택", "이세민", "이재권", "임지성", "정성철", "정지은", "정희은", "최대건", "한유진", "허진", "장루빈", "박달재"];
+/*
+let name = document.getElementById("name");
+for(let t = 0; t < nameList.length; t++){
+  let li = document.createElement("li");
+  li.textContent = nameList[t];
+  name.appendChild(li);
+}
+*/
+/*
+let name = document.getElementById("name");
+for(let i = 0; i < nameList.length; i++){
+  let li = document.createElement("li");
+  li.textContent = nameList[i];
+  name.appendChild(li);
+}
+if(name.appendChild(li)%2==0){
+  document.getElementById("li").style.backgroundColor="skyblue";
+}else{
+  document.getElementById("li").style.backgroundColor="lightcoral";
+}
+*/
+  
+  
+let dan = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+//let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for(let i = 1; i < 10; i++){
+  for(let t = 0; t < dan.length; t++){
+    document.write(i + '*' + dan[t] + '=' + (i*dan[t]));
+    document.write('<br>');
+  }
+}
+
+
 
 </script>
+
+
+
+
+
+
 
 
 </body>
