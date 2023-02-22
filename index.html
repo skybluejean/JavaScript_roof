@@ -10,16 +10,19 @@
 
 
 <body>
+
   <div id="root"></div>
 
   <script>
-    
-    let pokemon = ["피카츄", "라이츄", "파이리", "꼬부기", "이상해씨","갸랴도스"];
+    let pokemon = ["피카츄", "라이츄", "파이리", "꼬부기", "이상해씨","갸랴도스","잠만보", "토게피", "망나뇽", "이브이"];
     let root = document.getElementById("root");
-
-    for(let i = 0; i < 6; i++)
-    {console.log(pokemon[i])};
-
+    for(let i = 0; i < pokemon.length; i++){
+   // {console.log(pokemon[i])};
+    let li = document.createElement("li");
+    li.textContent = pokemon[i];
+    root.appendChild(li);
+    }
+    //console.log(li);
 
     /*
     for(
@@ -43,8 +46,5 @@ console.log(pokemon.length);
 console.log(pokemon[pokemon.length-3]);
 */
 </script>
-  
-
-
 </body>
 </html>
